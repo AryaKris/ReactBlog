@@ -1,4 +1,4 @@
-import {useState} from'react';
+import {useState, useEffect} from'react';
 import BlogList from './BlogList';
 
 
@@ -17,6 +17,12 @@ const Home = () => {
         setBlogs(newBlogs);
 
     }
+    //useEffects is useful when we have to run a set of code or fire a function after every render 
+    useEffect(()=>{
+
+
+
+    }, []);
 
     return (
         <div className="home">
